@@ -55,3 +55,8 @@ def turn_right():
 while front_is_clear():  #perulangan while ini adalah untuk menggerakkan reeborg agar berpindah ke tembok terdekat agar dia tidak terjebak dalam lingkaran tak terbatas dimana dia mempunyai sisi kanan bersih di keempat arah (Ini terjadi saat dia berada di tengah labirin)
     move()
 turn_left()
+
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
