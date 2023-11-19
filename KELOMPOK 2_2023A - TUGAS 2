@@ -19,3 +19,18 @@ while not at_goal():#diulangi selama tidak di goal
         lompat()
     else:
         move()
+
+#hurdle 4
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+        
+    turn_right()
+    move()
+    turn_right()
