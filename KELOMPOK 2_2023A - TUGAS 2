@@ -35,6 +35,12 @@ def jum():
     move()
     turn_right()
 
+move()
+    turn_left()
+    
+while not at_goal():
+    jum()
+
 
 #Hurdle 3
 def turn_right():
