@@ -29,6 +29,11 @@ def turn_right():
     
 def jum():
     move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
 
 
 #Hurdle 3
